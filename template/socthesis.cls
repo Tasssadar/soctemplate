@@ -140,7 +140,7 @@
 }
 
 %%% Prohlášení
-\newcommand{\makecopyrightstatement}{
+\newcommand{\makecopyrightstatement}[1]{
 	\pagestyle{empty}
 
 	~
@@ -154,12 +154,12 @@
 	\vspace{10mm}
 	
 	\noindent \parbox{\textwidth}{
-		\noindent V~Brně dne: \rule{4cm}{1pt}
+		\noindent {#1} dne: \rule{4cm}{1pt}
 		\hfill\parbox{5cm}{
     		\centering
     		\vspace{9mm}
     		\rule{5cm}{1pt}\\
-        	Vojtěch Boček
+        	\@author
 		}
 	}
 
