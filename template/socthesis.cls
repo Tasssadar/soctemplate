@@ -94,7 +94,7 @@
 		
 		\vfill
 
-        {\Large \B{Vojtěch Boček}} \\
+        	{\Large \B{\@author}} \\
 		
 		\vspace{20mm}
 
