@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{template/socthesis}[2017/01/15 Document class for czech SOC theses]
-\LoadClass[12pt, a4paper, oneside]{article}
+\LoadClass[12pt, a4paper, oneside]{book}
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[czech]{babel}
@@ -17,11 +17,11 @@
 \newcommand{\B}{\textbf} % tučné písmo
 \newcommand{\It}{\textit} % kurzíva
 
-%%%%%% ROZMĚRY 
+%%%%%% ROZMĚRY
 
-% posun textu kvůli kroužkové vazbě 
+% posun textu kvůli kroužkové vazbě
 %\addtolength{\textwidth}{mm}
-\addtolength{\hoffset}{4mm} 
+\addtolength{\hoffset}{4mm}
 
 \setlength{\intextsep}{5mm} % nastavení mezery okolo obrázků
 \marginparsep=15pt
@@ -56,9 +56,9 @@
     {3}{\def\@field{3. Chemie}}
     {4}{\def\@field{4. Biologie}}
     {5}{\def\@field{5. Geologie, geografie}}
-    {6}{\def\@field{6. Zdravotnictví}} 
+    {6}{\def\@field{6. Zdravotnictví}}
     {7}{\def\@field{7. Zemědělství, potravinářství, lesní a~vodní hospodářství}}
-    {8}{\def\@field{8. Ochrana a~tvorba životního prostředí}} 
+    {8}{\def\@field{8. Ochrana a~tvorba životního prostředí}}
     {9}{\def\@field{9. Strojírenství, hutnictví, doprava a~průmyslový design}}
     {10}{\def\@field{10. Elektrotechnika, elektronika a~telekomunikace}}
     {11}{\def\@field{11. Stavebnictví, architektura a~design interiérů}}
@@ -82,37 +82,37 @@
 \renewcommand{\maketitle}{%
 	\pagestyle{empty}
 	\voffset = -20mm % posun začátku textu výš
-    \enlargethispage{40mm} % zvětší oblast tisku pro tuto stránku   
+    \enlargethispage{40mm} % zvětší oblast tisku pro tuto stránku
 	\begin{center}
 	    {\large \B{STŘEDOŠKOLSKÁ ODBORNÁ ČINNOST}} \\
 	    \vspace{5mm}
 		\normalsize \B{Obor: \@field} \\
-		
+
 		\vspace{40mm}
-		
+
 		{\LARGE \B{\@titlecz}} \\
-		
+
 		\vfill
 
         	{\Large \B{\@author}} \\
-		
+
 		\vspace{20mm}
 
 		{\large \B{\@placefooter}}
 	\end{center}
 	\newpage
-	
+
 	\pagestyle{empty}
-    \enlargethispage{40mm} % zvětší oblast tisku pro tuto stránku   
+    \enlargethispage{40mm} % zvětší oblast tisku pro tuto stránku
 	\begin{center}
 	    {\large \B{STŘEDOŠKOLSKÁ ODBORNÁ ČINNOST}} \\
-		
+
 		\vspace{40mm}
-		
+
 		{\Large \B{\expandafter\MakeUppercase\expandafter{\@titlecz}}} \\
 		\vspace{20mm}
 		{\large \B{\expandafter\MakeUppercase\expandafter{\@titleen}}} \\
-		
+
 		\vfill
 
         \begin{table}[h]
@@ -129,7 +129,7 @@
 		\setlength{\tabcolsep}{6pt}
         \renewcommand{\arraystretch}{1.0}
 		\end{table}
-		
+
 		\vspace{10mm}
 
 		{\large \B{\@placefooter}}
@@ -145,14 +145,14 @@
 
 	~
 	\vfill
-	
+
 	\section*{Prohlášení}
 	Prohlašuji, že svou práci na téma \It{\@titlecz} jsem vypracoval/a samostatně pod vedením {\@mentorstatement} a~s~použitím odborné literatury a~dalších informačních zdrojů, které jsou všechny citovány v~práci a~uvedeny v~seznamu literatury na~konci práce.
 
 	Dále prohlašuji, že tištěná i~elektronická verze práce SOČ jsou shodné a~nemám závažný důvod proti zpřístupňování této práce v~souladu se~zákonem č.~121/2000~Sb., o~právu autorském, o~právech souvisejících s~právem autorským a~změně některých zákonů (autorský zákon) v~platném změní.
-	
+
 	\vspace{10mm}
-	
+
 	\noindent \parbox{\textwidth}{
 		\noindent {#1} dne: \rule{4cm}{1pt}
 		\hfill\parbox{5cm}{
@@ -172,8 +172,8 @@
 	~
 	\vfill
 	\section*{Poděkování}
-	{#1}	
-	
+	{#1}
+
 	\vspace{\baselineskip}
 	\noindent Tato práce byla provedena za finanční podpory Jihomoravského kraje.
 	\begin{figure}[h]
@@ -184,7 +184,7 @@
   		\includegraphics[width=.8\linewidth]{template/jcmm.png}
 	\end{subfigure}
 	\end{figure}
-	
+
 	\newpage
 	\pagestyle{plain}
 }
